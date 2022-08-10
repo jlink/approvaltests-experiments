@@ -24,7 +24,7 @@ class WithJqwikTests {
 
 	/**
 	 * Using this handmade lifecycle will check all values at the end,
-	 * only if the property succeeds otherwise
+	 * and only if the property succeeds otherwise.
 	 */
 	@Property(tries = 11, seed = "42")
 	@PerProperty(JqwikApprovals.class)
